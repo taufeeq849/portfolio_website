@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A showcase of developmental class.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Taufeeq's Portfolio">
+    <link rel="apple-touch-icon" href="icons/logo.jpeg">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="logo.jpeg"/>
+
+    <title>Taufeeq's Portfolio</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+<script>
+
+var firebaseConfig = {
+  apiKey: "AIzaSyCZ3hvJ6l3en1FcCm6qX9rWXTIHjomIRhs",
+  authDomain: "portfolio-c88cb.firebaseapp.com",
+  databaseURL: "https://portfolio-c88cb.firebaseio.com",
+  projectId: "portfolio-c88cb",
+  storageBucket: "portfolio-c88cb.appspot.com",
+  messagingSenderId: "297701962179",
+  appId: "1:297701962179:web:e9d77dc00474b9c4428d76",
+  measurementId: "G-1F229GLGQB"
+};
+
+  firebase.initializeApp(firebaseConfig);
+
+
+</script>
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+
+</script>
+
+
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
